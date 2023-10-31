@@ -60,13 +60,17 @@ body {
     background-color: #EFD0D0;
 }
 
-#headImg {
+/* #headImg {
     height: 400px;
     width: 100%;
     margin-bottom: 2%;
     background-image: url("./images/Ophiwebs.png");
     background-size: cover;
     background-position: center;
+} */
+.headImg {
+    width: 100%;
+    height: auto;
 }
 
 #aboutMe {
@@ -102,15 +106,63 @@ span {
 #blah {
     display: flex;
     width: 100%;
-    
+    flex-direction: column;
 }
 
-#blah a{
+.bigpic {
     display: flex;
-    width: 100%;
+    background: url(../images/bluespiderwebs.jpg)no-repeat;
+    background-color: #009c1d70;
+    background-blend-mode: darken;
+    background-size: 100% 100%;
+    flex-basis: 100%;
+    min-height: 500px;
+    align-items: end;
+    text-decoration: none;
+    border: 10px solid var(--hPink);
 }
 
-#blah img {
+.bigpic p {
+    color: #EFD0D0;
+    background-color: var(--hPink);
+    padding: 2% 5%;
+    margin-bottom: 2%;
+}
+
+.bigpic:hover {
+    background-color: #ffffff00;
+    background-blend-mode: none;
+    transition: 0.5s;
+}
+
+.smolpic {
+    display: flex;
+    background: url(../images/spidersilkdew.jpg)no-repeat;
+    background-size: 100% 100%;
+    min-height: 200px;
+    margin: 1% 0%;
+    background-color: #009c1d70;
+    background-blend-mode: darken;
+    border: 10px solid var(--hPink);
+    text-decoration: none;
+    align-items: end;
+}
+
+.smolpic p{
+    color: #EFD0D0;
+    background-color: var(--hPink);
+    padding: 2% 5%;
+    margin-bottom: 2%;
+}
+
+.smolpic:hover {
+    background-color: #ffffff00;
+    background-blend-mode: none;
+    transition: 0.5s;
+}
+
+
+/* #blah img {
     background-color: var(--dark);
     border: 1% solid #ddd;
     border-radius: 1px;
@@ -122,7 +174,7 @@ span {
 
 #blah img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
+} */
 
 #contactMe {
     display: flex;
