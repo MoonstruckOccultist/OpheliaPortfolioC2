@@ -1,0 +1,195 @@
+:root {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    --dark: #342A40;
+    --hPink: #F12E90;
+    --lPink: #FF75D8;
+}
+
+header {
+    background-color: var(--dark);
+    color: var(--hPink);
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 300%;
+    color: var(--dark);
+    background-color: var(--hPink);
+    padding: 1%;
+    padding-left: 9%;
+    margin-left: -8%;
+    border-radius: 20px;
+}
+header ul {
+    
+    margin-right: 10%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header li {
+    margin: 0% 3%;
+    white-space: nowrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 150%;
+}
+
+header a {
+    color: var(--hPink);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header a:hover {
+    transition: 0.5s;
+    color: var(--dark);
+    background-color: var(--hPink);
+    padding: 3%;
+    border-radius: 7px;
+}
+
+a:visited {
+    color: var(--lPink);
+}
+
+body {
+    background-color: #EFD0D0;
+}
+
+#headImg {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 2%;
+    background-image: url("./images/Ophiwebs.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+
+h2 {
+    font-size: 200%;
+    text-align: right;
+    margin-left: 2%;
+    color: var(--dark);
+}
+
+span {
+    margin: -0.5% 1%;
+    background: var(--hPink);
+    color: var(--hPink);
+}
+
+#aboutMe p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#work {
+    display: flex;
+    flex-direction: row;
+    margin: 6%;
+    margin-right: 4%;
+}
+
+#blah {
+    display: flex;
+    width: 100%;
+    
+}
+
+#blah a{
+    display: flex;
+    width: 100%;
+}
+
+#blah img {
+    background-color: var(--dark);
+    border: 1% solid #ddd;
+    border-radius: 1px;
+    padding: 3%;
+    width: 100%;
+    
+
+}
+
+#blah img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#contactMe {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0%;
+}
+
+#contactMe ul {
+    align-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contactMe li {
+    font-size: 150%;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#contactMe a {
+    color: var(--dark);
+    text-decoration: none;
+    
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1 {
+        text-align: center;
+        margin: 0% 10%;
+        margin-top: 0%;
+        padding-top: 10%;
+        margin-top: -11%;
+        padding-left: 0%;
+    }
+    header ul {
+        margin-right: 0%;
+    }
+    span {
+        display: none;
+    }
+    #aboutMe {
+        flex-direction: column;
+        margin: 2% 8%;
+    }
+    #work {
+        flex-direction: column;
+        margin: 2% 8%;
+    }
+    #contactMe{
+        flex-direction: column;
+        margin: 2% 8%;
+    }
+    h2{
+        text-align: left;
+        color: var(--dark);
+        
+        margin: 0% -1% 1% -1%;
+        background-color: var(--lPink);
+        padding: 1%;
+        border: 2px solid var(--dark);
+        border-radius: 15px;
+    }
+}
